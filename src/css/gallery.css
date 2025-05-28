@@ -1,0 +1,22 @@
+ul, li {
+  list-style-type: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.gallery li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  width:calc((100% - 48px) / 3);
+}
