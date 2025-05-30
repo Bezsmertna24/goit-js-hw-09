@@ -14,10 +14,9 @@ if (savedData) {
   form.elements.message.value = formData.message || '';
 }
 
-form.addEventListener('input', handelInput);
-function handelInput(event) {
-  event.preventDefault();
-
+form.addEventListener('input', handleInput);
+function handleInput(event) {
+  
   const name = event.target.name;
   const value = event.target.value.trim();
 
@@ -26,8 +25,8 @@ function handelInput(event) {
 }
 
 
-form.addEventListener('submit', handelSubmit);
-function handelSubmit(event) {
+form.addEventListener('submit', handleSubmit);
+function handleSubmit(event) {
   event.preventDefault();
 
   if (!formData.email || !formData.message) {
